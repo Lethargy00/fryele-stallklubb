@@ -1,0 +1,134 @@
+/* ---------- General on all sites ---------------- */
+
+body{
+    background-color: #FAF0E6;
+    font-family: "Roboto";
+    min-width: 535px;
+}
+
+.container{
+    display: flex;
+    gap: 25px;
+}
+
+.bubbles {
+    display: flex;
+    margin-top: 25px;
+    background-color: #352F44;
+    border-radius: 10px;
+    color: white;
+    justify-content: left;
+    flex-grow: 1;
+    max-width: 1000px;
+}
+.bubbles > * {
+    margin-left: 25px;
+}
+
+/* --------------------------------------------------- */
+
+
+/* -------------------------- Sidornas Header -------------------------- */
+
+.head-container {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #352F44;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.button {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    border: solid #5C5470 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #5C5470;
+}
+
+.button > li {
+    margin: 10px
+}
+
+.button:hover {
+    color: #352F44;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.name-contianer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.name {
+    margin: 10px;
+    background-color: #5C5470;
+    border: solid #5C5470 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+
+.name > li {
+    list-style: none;
+}
+
+/* ------------------ Main hemsidan ------------------ */
+
+.welcome {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.welcome > h1 {
+    margin-left: 25px;
+    display: flex;
+}
+
+
+.welcome > div > img {
+    margin: 25px;
+    width: 450px;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.welcome > div > p {
+    margin: 25px;
+    font-size: 23px;
+}
+
+
+.nyheter > h1 {
+    margin-left: 25px;
+}
+
+/* --------------------------------------------------- */
+
+@media (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* -------------------------- Footer -------------------------- */
+
+.footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #352F44;
+    color: white;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
