@@ -18,11 +18,16 @@ body{
     border-radius: 10px;
     color: white;
     justify-content: left;
-    flex-grow: 1;
     max-width: 1000px;
 }
-.bubbles > * {
-    margin-left: 25px;
+
+.bubbles-sub p {
+font-size: 1.3em;
+}
+
+.bubbles img {
+    margin: 25px;
+    width: 500px;
 }
 
 /* --------------------------------------------------- */
