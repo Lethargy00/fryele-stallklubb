@@ -102,8 +102,6 @@ body{
     font-size: 1em;
 }
 
-
-
 .name > li {
     list-style: none;
 }
@@ -122,7 +120,7 @@ body{
 
 @media (max-width: 1618px) {
     .container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
