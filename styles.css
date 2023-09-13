@@ -4,27 +4,55 @@ body{
     background-color: #FAF0E6;
     font-family: "Roboto";
     min-width: 535px;
+    color: white;
 }
 
 .container{
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
     gap: 25px;
+    margin-top: 25px;
+}
+
+.bubble-container {
+    display: inline-flex;
+    align-items: start;
+    flex-direction: row;
+    background-color: #352F44;
+    border-radius: 10px;
 }
 
 .bubbles {
-    display: flex;
-    margin-top: 25px;
-    background-color: #352F44;
-    border-radius: 10px;
-    color: white;
-    justify-content: left;
-    flex-grow: 1;
-    max-width: 1000px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 25px;
+    
+    max-width: 415px;
 }
-.bubbles > * {
-    margin-left: 25px;
+.bubbles h1{
+
+    margin: 0;
+    margin-bottom: 25px;
 }
 
+.bubbles p {
+    font-size: 1.3rem;
+}
+
+.text-highlight {
+    color: white;
+}
+ .text-highlight:hover {
+    color: #5C5470;
+
+}
+
+.bubbles img {
+    width: 415px;
+    border-radius: 5px;
+}
 /* --------------------------------------------------- */
 
 
@@ -80,40 +108,19 @@ body{
     list-style: none;
 }
 
-/* ------------------ Main hemsidan ------------------ */
-
-.welcome {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.welcome > h1 {
-    margin-left: 25px;
-    display: flex;
-}
-
-
-.welcome > div > img {
-    margin: 25px;
-    width: 450px;
-    border-radius: 10px;
-    float: left;
-    overflow: hidden;
-}
-
-.welcome > div > p {
-    margin: 25px;
-    font-size: 23px;
-}
-
-
-.nyheter > h1 {
-    margin-left: 25px;
-}
-
 /* --------------------------------------------------- */
 
-@media (max-width: 1100px) {
+@media (max-width: 1010px){
+    .bubble-container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .bubbles{
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 1618px) {
     .container {
         flex-direction: column;
     }
