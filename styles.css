@@ -3,7 +3,7 @@
 body{
     background-color: #FAF0E6;
     font-family: "Roboto";
-    min-width: 535px;
+    min-width: 380px;
     color: white;
 }
 
@@ -28,7 +28,6 @@ body{
     display: inline-flex;
     flex-direction: column;
     margin: 25px;
-    
     max-width: 415px;
 }
 .bubbles h1{
@@ -55,6 +54,27 @@ body{
 }
 /* --------------------------------------------------- */
 
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up {
+    text-align: center;
+    list-style: none;
+}
+
+.sign-up-button {
+    background-color: #5C5470;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 2rem;
+
+}
+
+.sign-up-button:hover{
+    color: #352F44;
+}
 
 /* -------------------------- Sidornas Header -------------------------- */
 
@@ -117,6 +137,7 @@ body{
         max-width: 475px;
     }
 }
+
 
 @media (max-width: 1618px) {
     .container {
