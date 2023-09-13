@@ -10,17 +10,18 @@ body{
 .container{
     display: inline-flex;
     align-items: start;
+    flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
 }
 
 .bubble-container {
     display: inline-flex;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
     background-color: #352F44;
     border-radius: 10px;
-    max-width: 1000px;
+    width: 50%;
 }
 
 .bubbles {
@@ -103,6 +104,10 @@ body{
 @media (max-width: 1010px){
     .bubble-container {
         flex-direction: column;
+        align-items: start;
+    }
+    .bubbles{
+        max-width: 475px;
     }
 }
 
