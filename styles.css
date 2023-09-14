@@ -128,6 +128,30 @@ body{
 
 /* --------------------------------------------------- */
 
+@media (min-width: 360px) and (max-width: 414px) {
+    
+    .head-container {
+        max-width: 340px
+    }
+
+    .bubble-container {
+        width: 340px;
+    }
+
+    .bubble-container img {
+        width: 290px;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        max-width: 340px;
+    }
+}
+
+
 @media (max-width: 1010px){
     .bubble-container {
         flex-direction: column;
